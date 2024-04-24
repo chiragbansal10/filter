@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+.select-styled{
+  background-color: #6c757d;
+}
+.reset_button{
+  background-color: #343a40;
+  color: #ffffff;
+}
+/*  */
+@media only screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar ul.show {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu-toggle {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .menu-toggle:hover {
+    background-color: #555;
   }
 }
